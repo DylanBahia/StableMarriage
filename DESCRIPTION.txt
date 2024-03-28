@@ -1,0 +1,11 @@
+Package: stable_marriage
+Type: Package
+Title: Implements Fundamental Algorithm To Produce A Stable Marriage Given A Pair Of Preference Tables
+Version: 1.0
+Date: 2024-03-29
+Author: Dylan Bahia
+Maintainer: Dylan Bahia <d.bahia1@lancaster.ac.uk>
+Description: 
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.12)
+LinkingTo: Rcpp
