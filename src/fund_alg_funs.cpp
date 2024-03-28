@@ -80,7 +80,7 @@ std::vector<std::vector<int>> fund_alg(std::unordered_map<int,std::vector<int>> 
 	return matching;	
 }
 
-RCPP_MODULE(fundamental)
-{
-function("fund_alg", &fund_alg);
-}
+//RCPP_MODULE(fundamental)
+//{
+//function("fund_alg", &fund_alg);
+//}
