@@ -1,4 +1,4 @@
-Package: stable_marriage
+Package: StableMarriage
 Type: Package
 Title: Implements Fundamental Algorithm To Produce A Stable Marriage Given A Pair Of Preference Tables
 Version: 1.0
