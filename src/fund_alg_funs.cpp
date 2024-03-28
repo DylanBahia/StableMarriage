@@ -5,11 +5,6 @@
 #include <iterator>
 #include "is_stable_funs.h"
 
-#include "Rcpp.h"
-using namespace Rcpp;
-
-// [[Rcpp::plugins("cpp17")]]
-
 //given two preference tables, returns a matching as produced by the fundamental algorithm.	
 std::vector<std::vector<int>> fund_alg(std::unordered_map<int,std::vector<int>> men,
 					std::unordered_map<int,std::vector<int>> women){
@@ -79,8 +74,3 @@ std::vector<std::vector<int>> fund_alg(std::unordered_map<int,std::vector<int>> 
 	
 	return matching;	
 }
-
-//RCPP_MODULE(fundamental)
-//{
-//function("fund_alg", &fund_alg);
-//}
