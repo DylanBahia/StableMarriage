@@ -12,6 +12,14 @@ In order to get a stable matching, you need to use the 'sm' function. As it's in
 
 | Man | 1st preference | 2nd preference | 3rd preference |
 | ----| ---| --- | ---|
-| 1 | 4 | 5|6|
-| 2 | 5 |6|4|
-| 3 | 6 |5|4|
+| 1 | 4 | "Ricky"|6|
+| 2 | "Ricky" |6|4|
+| 3 | 6 |"Ricky"|4|
+
+This can be represented in the following way for input to the 'sm' function:
+
+men <- list(c(1,4,"Ricky",6),
+            c(2,"Ricky",6,4),
+            c(3,6,"Ricky",4))
+
+## Output
