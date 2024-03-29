@@ -15,7 +15,7 @@ using namespace Rcpp;
 
 // [[Rcpp::export]]
 
-std::list<std::vector<int>> fund_alg_r(std::list<std::vector<int>> men,
+std::vector<std::vector<int>> fund_alg_r(std::list<std::vector<int>> men,
 					 std::list<std::vector<int>> women)
 {
 	//converts men's preference table into unordered_map.
