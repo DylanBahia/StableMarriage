@@ -23,3 +23,5 @@ men <- list(c(1,4,"Ricky",6),
             c(3,6,"Ricky",4))
 
 ## Output
+
+The output is a matrix where each row represents a matching.
