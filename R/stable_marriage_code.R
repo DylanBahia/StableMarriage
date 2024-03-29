@@ -8,6 +8,7 @@ sm <- function(men,women){
   women <- name_change$women
   dict <- name_change$dict
   print(men)
+  print(dict)
   return(post_process(stable_marriage(men,women),dict))
 }
 
