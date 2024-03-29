@@ -2,8 +2,9 @@
 #include <unordered_map>
 #include <algorithm>
 #include <iterator>
+#include <list>
 
-std::unordered_map<int,std::vector<int>> marshall(std::vector<std::vector<int>> table)
+std::unordered_map<int,std::vector<int>> marshall(std::list<std::vector<int>> table)
 {
 	std::unordered_map<int,std::vector<int>> table_map;
 	
