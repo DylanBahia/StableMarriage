@@ -13,7 +13,7 @@ using namespace Rcpp;
 
 // [[Rcpp::plugins("cpp17")]]
 
-
+//marshalls the inputs and runs the fundamental algorithm.
 std::vector<std::vector<int>> fund_alg_r(std::list<std::vector<int>> men,
 					 std::list<std::vector<int>> women)
 {
