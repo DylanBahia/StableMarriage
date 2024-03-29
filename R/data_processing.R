@@ -21,8 +21,8 @@ pre_process <- function(men,women){
   
   for(i in 1:n){
     for(j in 1:n){
-      men[[i]][j] <- dict[dict[,2]==men[[i]][j]][1]
-      women[[i]][j] <- dict[dict[,2]==women[[i]][j]][1]
+      men[[i]][j] <- as.integer(dict[dict[,2]==men[[i]][j]][1])
+      women[[i]][j] <- as.integer(dict[dict[,2]==women[[i]][j]][1])
     }
   }
   return(list(men=men,women=women,dict=dict))
