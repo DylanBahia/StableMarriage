@@ -4,6 +4,8 @@
 #include <iterator>
 #include <list>
 
+// converts a list of vectors into an unordered map, where the first element of a vector
+// is a key and the following elements comprise the value.
 std::unordered_map<int,std::vector<int>> marshall(std::list<std::vector<int>> table)
 {
 	std::unordered_map<int,std::vector<int>> table_map;
