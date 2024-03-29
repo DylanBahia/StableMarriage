@@ -20,10 +20,14 @@ pre_process <- function(men,women){
   dict <- cbind(seq(1,2*n),c(m_names,w_names))
   
   for(i in 1:n){
-    for(j in 1:n){
-      men[[i]][j] <- as.integer(dict[dict[,2]==men[[i]][j]][1])
-      women[[i]][j] <- as.integer(dict[dict[,2]==women[[i]][j]][1])
+    man <- rep(0,n+1)
+    woman <- rep(0,n+1)
+    for(j in 1:(n+1)){
+      man[j] <- as.integer(dict[dict[,2]==men[[i]][j]][1])
+      woman[j] <- as.integer(dict[dict[,2]==women[[i]][j]][1])
     }
+    men[[i]] <- man
+    women[[i]] <- woman
   }
   return(list(men=men,women=women,dict=dict))
 }
