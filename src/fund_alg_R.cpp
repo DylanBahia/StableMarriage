@@ -10,6 +10,10 @@
 #include "Rcpp.h"
 using namespace Rcpp;
 
+// [[Rcpp::plugins("cpp17")]]
+
+// [[Rcpp::export]]
+
 std::vector<std::vector<int>> fund_alg_r(std::vector<std::vector<int>> men,
 					 std::vector<std::vector<int>> women)
 {
