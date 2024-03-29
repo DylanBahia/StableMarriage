@@ -4,7 +4,6 @@ post_process <- function(matching,dict){
     for(j in 1:ncol(match_mat)){
       match_mat[i,j] <- dict[dict[,1]==matching[[i]][j]][2]
     }
-    match_mat[i,] <- match
   }
   
   colnames(match_mat) <- c("Man","Woman")
