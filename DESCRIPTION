@@ -5,10 +5,7 @@ Version: 1.0
 Date: 2024-03-29
 Author: Dylan Bahia
 Maintainer: Dylan Bahia <d.bahia1@lancaster.ac.uk>
-Description: This package implements the Fundamental Algorithm for the Stable Marriage Problem. The user interacts with
-the package using R, and the algorithm is programmed in c++. Users can enter a pair of preference tables, the names contained
-in which can be a mixture of string and integer data types. The output is a matrix containing a stable matching as produced
-by the Fundamental Algorithm.
+Description: This package implements the Fundamental Algorithm for the Stable Marriage Problem. The user interacts with the package using R, and the algorithm is programmed in c++. Users can enter a pair of preference tables, the names contained in which can be a mixture of string and integer data types. The output is a matrix containing a stable matching as produced by the Fundamental Algorithm.
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.12)
 LinkingTo: Rcpp
