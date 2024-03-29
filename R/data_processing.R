@@ -15,25 +15,8 @@ post_process <- function(matching,dict){
   return(match_mat)
 }
 
-#if preference tables are given in files, they are extracted.
-#the preference tables are then augmented to use integer names.
-pre_process <- function(men,women,file){
-  if(file = TRUE){
-    men_dat <- readLines(men)
-    women_dat <- readLines(women)
-    
-    men <- list()
-    women <- list()
-    for(i in 1:length(men_dat)){
-      men[[i]] <- strsplit(men_dat[i])[[1]]
-      women[[i]] <- strsplit(women_dat[i])[[1]]
-    }
-  }
-  return(mapping(men,women))
-}
-
 #replaces names of people with integer names
-mapping <- function(men,women){
+pre_process <- function(men,women){
   
   #finds all the names of people.
   w_names <- men[[1]][-1]
